@@ -1,0 +1,10 @@
+@echo off
+echo === Compilation ===
+"C:\Program Files\apache-maven-3.9.11\apache-maven-3.9.11\bin\mvn.cmd" compile
+
+echo.
+echo === Execution du Client WS ===
+"C:\Program Files\apache-maven-3.9.11\apache-maven-3.9.11\bin\mvn.cmd" exec:java -Dexec.mainClass="client.ClientWS"
+
+echo.
+pause
